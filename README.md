@@ -16,6 +16,6 @@ Requirements Derived from the Provided Image:
     - Name of quote's originator: bottom right of quote, bold
 - Main box 4:
     - Box with bg color, centered, containing:
-        - Call to action text, bold, +font, with subtext underneath
-        - Button on right side, with text "Sign Up"
+        - Call to action text, bold, +font, with subtext underneath, on left side, vertically centered
+        - Button on right side, with text "Sign Up", on right side, vertically centered
 
