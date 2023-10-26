@@ -1,6 +1,17 @@
+
+
 body {
     color: black;
     background-color: rgb(231, 236, 238);
+    background-image: url("images/bg-image1.png");
+    /* doing height:100vh; means Viewport Height - makes the image take up
+    100% of the screen. 1vh would make it take up 1% of the screen */
+    /* height:100%; only makes the image 100% the size of its parent size */
+    height:100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
   }
 
 div {
@@ -56,3 +67,4 @@ margin: 25px;
   .highlight {
     background-color: yellow;
   }
+
