@@ -114,7 +114,7 @@ div {
     justify-content: center;
     margin-top: 100px; /* This adds a padding-top between the container and the webpage  */
     position: absolute;
-    bottom: 200px;
+    bottom: -300px;
     left: 0;
     right: 0;
 
