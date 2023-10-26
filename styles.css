@@ -1,21 +1,25 @@
+/* Style sheet for the landing page.  */
 
+
+
+/* sets the bg image for the full-page */
+/* 100vh makes the image the full page, 100% would only make the image
+100% of its parent (original) size */
+.bg {
+  background-image: url("images/bg-image1.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body {
     color: black;
     background-color: rgb(231, 236, 238);
-    background-image: url("images/bg-image1.png");
-    /* doing height:100vh; means Viewport Height - makes the image take up
-    100% of the screen. 1vh would make it take up 1% of the screen */
-    /* height:100%; only makes the image 100% the size of its parent size */
-    height:100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
   }
 
 div {
-    color: rgb(236, 59, 74);
+    color: rgb(0, 0, 0);
     background-color:  rgb(231, 236, 238);
   }
   
@@ -24,7 +28,7 @@ div {
   p,
   h2,
   h1 {
-    color: rgb(236, 59, 74);
+    color: rgb(0, 0, 0);
   }
 
   img {
@@ -55,16 +59,38 @@ div {
     font-family: Verdana, "DejaVu Sans", sans-serif;
   }
 
-  /* boxes */
-
-  .box-one {
-padding: 10px;
-border: 10px solid #0000ff;
-margin: 25px; 
-  }
-
   /* for use with <span class="highlight"></span> */
   .highlight {
     background-color: yellow;
+  }
+
+
+  /* flexboxes */
+
+
+  /* this selector selects all divs inside of .flex-container */
+  .container div {
+    height: 150px;
+    padding: 20px;
+    background: plum;
+    border: 4px solid indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .item {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid darkslategray;
+    background: skyblue;
+    background-size: cover;
+    margin: 0px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
