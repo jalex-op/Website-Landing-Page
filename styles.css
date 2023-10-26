@@ -124,8 +124,9 @@ div {
     display: flex;
     padding: 10px;
     color: rgb(227, 232, 238); /* this is the color of the font */
-    background-color: rgb(204, 102, 0); /* this is the bg color of the card */
+    background-color: #f7601b; /* this is the bg color of the card */
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     border: 1px transparent black;
     width: 150px;
     height: 150px;
