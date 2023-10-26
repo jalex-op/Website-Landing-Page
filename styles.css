@@ -147,6 +147,7 @@ div {
     justify-content: center;
 }
 
+/* Title to go with the container. Will move automatically if the container moves */
 .container-title {
   display: flex;    /* Makes it appear on a new line below the card content */
   color: rgb(227, 232, 238);       
