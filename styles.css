@@ -95,32 +95,30 @@ div {
     justify-content: center;
     margin-top: 100px; /* This adds a padding-top between the container and the webpage  */
     position: absolute;
-    bottom: 100px;
+    bottom: -800px;
     left: 0;
     right: 0;
 
-    
-    
-
   }
   
-
   .container2 {
     display: flex;
     width: 100%;
-    background-color: rgb(41, 41, 41);
-    /* alternate colors - Dark blue-grey rgb(35, 45, 59); orange: rgb(204, 102, 0); */ 
-    grid-template-columns: 75px 75px 75px 75px;
-    grid-template-rows: 75px;
-    gap: 25px;
-    padding: 50px;
+    height: 400px;
+    background-color: rgb(35, 45, 59);
+    /* alternate colors - Dark blue-grey rgb(35, 45, 59); orange: rgb(204, 102, 0); dark blue rgb(41, 41, 41); */ 
+    flex-direction: row;
+    gap: 75px;
+    padding: 60px;
     align-items: center;
     justify-content: center;
     margin-top: 100px; /* This adds a padding-top between the container and the webpage  */
-    
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
 
   }
-
 
   .card {
     display: flex;
