@@ -6,12 +6,30 @@
 /* 100vh makes the image the full page, 100% would only make the image
 100% of its parent (original) size */
 .bg {
-  background-image: url("images/bg-image1.png");
+  background-image: url("images/bg-image2.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* Logo image for top-left corner of wp */
+#top-left-image {
+  position: absolute; /* This positions the image relative to the nearest positioned ancestor. If none, it's relative to the <body> */
+  top: 0;             /* Align the top edge of the image with the top edge of its container */
+  left: 0;            /* Align the left edge of the image with the left edge of its container */
+  width: 100px;       /* Set the width of the image (you can adjust this as needed) */
+  height: auto;       /* Maintain the aspect ratio of the image */
+  z-index: 1000;      /* Ensure the image stays on top of other elements (adjust value if needed) */
+  margin-top: 30px;
+  margin-left: 200px;
+  border-radius: 1em;
+}
+
+
+
+
 
 body {
     color: black;
@@ -20,7 +38,6 @@ body {
 
 div {
     color: rgb(0, 0, 0);
-    background-color:  rgb(231, 236, 238);
   }
   
   /* Could do the following (p,h2,h1) individually, but since they 
@@ -43,19 +60,8 @@ div {
     font-size: 32px;
   }
 
-  #two {
-    color: #0000ff;
-    font-size: 36px;
-  }
 
-  #one {
-    color: #ffae00;
-    font-size: 36px;
-  }
-
-
-  .class1 {
-    background-color: rgb(231, 236, 238);
+  .font1 {
     font-family: Verdana, "DejaVu Sans", sans-serif;
   }
 
@@ -65,32 +71,32 @@ div {
   }
 
 
-  /* flexboxes */
-
-
-  /* this selector selects all divs inside of .flex-container */
-  .container div {
-    height: 150px;
-    padding: 20px;
-    background: plum;
-    border: 4px solid indigo;
+  .grid-container {
     display: flex;
+    background-color: rgb(18, 15, 34);
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 75px;
+    gap: 25px;
+    padding: 20px;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    flex-direction: row;
-  }
+    margin-top: 100px; /* This adds a padding-top between the container and the webpage  */
+    border-radius: 1em;
 
-  .item {
+
+  }
+  
+  .card {
+    display: flex;
     padding: 10px;
-    width: 20px;
-    height: 20px;
-    border: 4px solid darkslategray;
-    background: skyblue;
-    background-size: cover;
-    margin: 0px; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: peachpuff;
+    border: 1px transparent black;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 1em;
   }
 
+ 
