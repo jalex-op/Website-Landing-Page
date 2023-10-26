@@ -147,4 +147,17 @@ div {
     justify-content: center;
 }
 
+.container-title {
+  display: flex;    /* Makes it appear on a new line below the card content */
+  color: rgb(227, 232, 238);       
+  text-align: center;
+  font-size: 30px;   
+  font-family: 'Roboto', sans-serif;
+  margin-top: 200px;   /* Space between the card content and subtext */
+  align-items: center;
+  justify-content: center; 
+  position: absolute;
+  top: -150px;
+  left: center;
+}
  
