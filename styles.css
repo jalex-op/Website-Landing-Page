@@ -74,6 +74,7 @@ div {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* (0,0,0,0) values refer to: Horizontal offset, Vertical offset, Blur radius, Color */
 }
 
+/* defines the text for the navbar items */
 .nav-button {
     background: none;
     border: none;
@@ -82,13 +83,31 @@ div {
     color: white; 
     margin-top: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-
+    transition: transform 0.3s; 
 }
 
-.nav-text {
-    color: white; /* Default color for paragraph text */
-    /* Add any other styles specific to the paragraph text here */
+.nav-button:active {
+  transform: scale(0.95);  /* Reduces the button size to 95% of its original size when pressed */
 }
+
+.nav-text, .nav-button {
+  position: relative;
+}
+
+/* Adds a blur effect to the nav-buttons */
+.nav-text::before, .nav-button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(1px); /* Apply blur */
+  z-index: -1;
+  border-radius: 0.5em;
+}
+
 
 
 .hover-text:hover {
@@ -104,6 +123,7 @@ div {
     background-color: yellow;
   }
 
+  /* container for the nav-bar */
   .containerTop {
     display: flex;
     width: auto;
@@ -124,7 +144,8 @@ div {
 
   }
   
-
+  /* bottom container */
+  
   .container1 {
     display: flex;
     width: 100%;
@@ -136,13 +157,13 @@ div {
     padding: 60px;
     align-items: center;
     justify-content: center;
-    margin-top: 100px; /* This adds a padding-top between the container and the webpage  */
+    margin-top: 100px; 
     position: absolute;
     bottom: -800px;
     left: 0;
     right: 0;
-
   }
+  
   
   .container2 {
     display: flex;
@@ -157,7 +178,7 @@ div {
     justify-content: center;
     margin-top: 100px; /* This adds a padding-top between the container and the webpage  */
     position: absolute;
-    bottom: -300px;
+    bottom: -400px;
     left: 0;
     right: 0;
 
@@ -203,4 +224,46 @@ div {
   top: -150px;
   left: center;
 }
- 
+
+
+  /* first container that goes immediately under the navbar */
+  .containerFirst {
+  display: flex;
+  width: 800px;
+  height: 250px;
+  /* the last value in rgb refers to transparency */
+  background-color: rgb(35, 45, 59, 0.75);
+  /* alternate colors - Dark blue-grey rgb(35, 45, 59); orange: rgb(204, 102, 0); dark blue rgb(41, 41, 41); */ 
+  flex-direction: column;
+  gap: 0;
+  padding: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 300px; /* This adds a padding-top between the container and the webpage  */
+  margin-left: 100px;
+  border-radius: 0.75em;
+}
+
+
+/* Title to go with the container. Will move automatically if the container moves */
+.container-titleFirst {
+  display: flex;    /* Makes it appear on a new line below the card content */
+  color: rgb(242, 248, 255);       
+  text-align: center;
+  font-size: 30px;   
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  justify-content: center; 
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Horizontal offset, Vertical offset, Blur radius, Color */
+}
+
+/* Subtext for first container under navbar */
+.subtextFirst {
+  display: flex;    /* Makes it appear on a new line below the card content */
+  color: rgb(227, 232, 238);       
+  font-size: 18px;   
+  width: 700px;
+  font-family: 'Roboto', sans-serif;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
