@@ -59,8 +59,6 @@ div {
   }
 
   button {
-    font-weight: bold;
-    font-size: 20px;
     background: none;
     border: none;
     padding: 0;
@@ -71,7 +69,32 @@ div {
     transform: scale(0.95);   /* Reduces the image size to 95% of its original size */
   }
 
+  .hover-text:hover {
+    color: #f7601b; /* Hover color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* (0,0,0,0) values refer to: Horizontal offset, Vertical offset, Blur radius, Color */
+}
 
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: white; 
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+.nav-text {
+    color: white; /* Default color for paragraph text */
+    /* Add any other styles specific to the paragraph text here */
+}
+
+
+.hover-text:hover {
+  color: #f7601b;
+}
+  
   .font1 {
     font-family: Verdana, "DejaVu Sans", sans-serif;
   }
@@ -81,6 +104,26 @@ div {
     background-color: yellow;
   }
 
+  .containerTop {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: rgb(227, 232, 238);       
+    font-size: 20px;   
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /* alternate colors - Dark blue-grey rgb(35, 45, 59); orange: rgb(204, 102, 0); dark blue rgb(41, 41, 41); */ 
+    flex-direction: row;
+    gap: 50px;
+    padding: 0px;
+    padding-right: 200px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0px; /* This adds a padding-top between the container and the webpage  */
+
+  }
+  
 
   .container1 {
     display: flex;
