@@ -79,7 +79,7 @@ div {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 22px;
     color: white; 
     margin-top: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
@@ -107,6 +107,43 @@ div {
   z-index: -1;
   border-radius: 0.5em;
 }
+
+
+.signup-button {
+  background: #f7601b;
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white; 
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  transition: transform 0.3s; 
+  border-radius: 0.5em;
+}
+
+.signup-button:active {
+  transform: scale(0.95);  /* Reduces the button size to 95% of its original size when pressed */
+}
+
+.signup-text, .nav-button {
+  position: relative;
+}
+
+/* Adds a blur effect to the nav-buttons */
+.signup-text::before, .nav-button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(1px); /* Apply blur */
+  z-index: -1;
+  border-radius: 0.5em;
+}
+
 
 
 
